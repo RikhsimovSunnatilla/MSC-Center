@@ -1,0 +1,80 @@
+.services {
+    margin-bottom: 195px;
+
+    &__title {
+        color: #333333;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 42px;
+    }
+
+    hr {
+        width: 1024px;
+        border: 1px solid #bdbdbd;
+        margin: 0 0 52px 0;
+    }
+
+    div[class^="col"] {
+        margin-bottom: 32px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100% !important;
+        position: relative;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.2);
+        padding: 35px 20px;
+
+        &:hover {
+            box-shadow: 3px 13px 9px rgba(0, 0, 0, 0.2);
+        }
+
+        &:hover &-call {
+            color: #fff !important;
+            background: $color-ink !important;
+        }
+
+        &-call {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            color: $color-ink;
+            font-size: 23px;
+            background: #fff;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            padding: 4px 10px;
+        }
+
+        &-img {
+            max-width: 92px;
+            height: 92px;
+            object-fit: contain;
+            margin: 0 auto 28px;
+        }
+
+        &-title {
+            color: $color-ink;
+            font-size: 18px;
+            font-weight: bold;
+            word-break: break-word;
+            line-height: 22px;
+            text-transform: uppercase;
+
+            &--bg {
+                color: #fff;
+                border-radius: 30px;
+                background: $color-ink;
+                padding: 11px 28px;
+            }
+
+        }
+
+    }
+
+}

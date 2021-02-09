@@ -1,0 +1,495 @@
+@media (max-width: 1200px) {
+
+    .header {
+
+        .navbar-nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        &__link {
+            margin-right: 0;
+        }
+
+        &__swiper-wrapper {
+            height: 500px;
+        }
+
+        &__swiper-pagination {
+            right: 35px !important;
+        }
+
+    }
+
+    .news {
+        background: url(../img/shapes/circle.png) 700px 110px no-repeat;
+        background-size: 450px;
+
+        &__title {
+            font-size: 32px;
+        }
+
+        hr {
+            width: 580px;
+            margin: 0 0 27px 0;
+        }
+
+        &__card {
+
+            &-body::after {
+                bottom: -29px;
+                border-width: 14px;
+            }
+
+            &-title {
+                font-size: 16px;
+            }
+
+            &-text {
+                font-size: 13px;
+                margin-bottom: 6px;
+            }
+
+            &-date {
+                font-size: 13px;
+            }
+
+        }
+
+        &__park {
+
+            &-title {
+                font-size: 32px;
+            }
+    
+            &-subtitle {
+                font-size: 26px;
+            }
+    
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+
+    }
+
+    .services {
+        margin-bottom: 150px;
+
+        &__title {
+            font-size: 32px;
+        }
+
+        hr {
+            width: 610px;
+            margin: 0 0 47px 0;
+        }
+
+        &__card {
+            padding: 25px 20px;
+
+            &-img {
+                width: 82px;
+                height: 82px;
+            }
+
+            &-title {
+                font-size: 15px;
+            }
+
+        }
+    
+    }
+
+    .footer {
+        background: none;
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__copyright {
+            justify-content: space-between;
+            padding: 18px 50px 14px;
+
+            p,
+            a {
+                margin: 0 !important;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .news {
+        background: url(../img/shapes/circle.png) 400px 160px no-repeat;
+        background-size: 450px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        hr {
+            width: 370px;
+        }
+
+        &__park-subtitle {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .services {
+        margin-bottom: 100px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        hr {
+            width: 400px;
+        }
+
+    }
+
+    .footer {
+
+        &__title {
+            font-size: 15px;
+        }
+
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .news {
+        background: url(../img/shapes/circle.png) center 1000px no-repeat;
+        background-size: 450px;
+        padding-bottom: 100px;
+        margin-bottom: 0;
+
+        hr {
+            width: 270px;
+        }
+
+        &__card {
+            margin-bottom: 32px;
+
+            &-title {
+                font-size: 18px;
+            }
+
+            &-text {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+
+            &-date {
+                font-size: 16px;
+            }
+
+            &-img {
+                height: 330px;
+            }
+
+        }
+
+        &__link {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 18px;
+            margin: 0 0 0 auto;
+        }
+
+        &__park {
+            text-align: left;
+            margin-top: 63px;
+
+            &-title {
+                font-size: 36px;
+            }
+    
+            &-subtitle {
+                font-size: 27px;
+                margin-bottom: 50px;
+            }
+    
+            &-img {
+                position: relative;
+                padding: 0 75px;
+
+                &-before {
+                    width: 450px;
+                    position: absolute;
+                    top: 80px;
+                    left: 290px;
+                    z-index: -1;
+                }
+
+                &-after {
+                    width: 450px;
+                    position: absolute;
+                    top: 250px;
+                    left: -160px;
+                    z-index: -1;
+                }
+
+            }
+    
+        }
+
+    }
+
+    .services {
+
+        hr {
+            width: 230px;
+        }
+
+    }
+
+    .footer {
+
+        &__mobile {
+
+            .col-4,
+            .col-5 {
+                flex: 0 0 50% !important;
+                max-width: 50% !important;
+                margin-bottom: 20px;
+            }
+    
+            .col-3 {
+                flex: 0 0 30% !important;
+                max-width: 30% !important;
+            }
+    
+        }
+
+        &__title {
+            color: #828282;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: none;
+        }
+
+        hr {
+            width: 100%;
+            border-color: $color-ink;
+            margin: 34px 0;
+        }
+
+        &__title.mb-2 {
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 19px !important;
+        }
+
+        &__copyright {
+            padding: 12px 25px 20px 25px;
+
+            p.mr-5 {
+                margin-right: auto !important;
+            }
+
+            a.ml-4 {
+                margin-left: auto !important;
+            }
+
+            a.ml-auto {
+                margin: 23px auto 0 !important;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .header {
+        margin-bottom: 36px;
+
+        &__navbar {
+            padding: 8px 0;
+        }
+
+        &__swiper-wrapper {
+            height: 452px;
+        }
+
+        .swiper-slide {
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 24.67%);
+        }
+
+        &__slide-img {
+            position: relative;
+            z-index: -1;
+        }
+
+        &__swiper-pagination {
+            right: 15px !important;
+        }
+
+    }
+
+    .news {
+        background: url(../img/shapes/circle.png) center 780px no-repeat;
+        background-size: 500px;
+        padding-bottom: 130px;
+
+        &__title {
+            font-size: 28px;
+            margin-bottom: 32px;
+        }
+
+        hr {
+            width: 146px;
+            margin: 0 0 37px 0;
+        }
+    
+        &__card {
+            margin-bottom: 18px;
+
+            &-img {
+                height: 225px;
+            }
+
+        }
+
+        &__park {
+
+            &-img {
+                padding: 0 30px;
+
+                &-before {
+                    max-width: none;
+                    width: 500px;
+                    top: 70px;
+                    left: 270px;
+                }
+
+                &-after {
+                    max-width: none;
+                    width: 500px;
+                    top: 260px;
+                    left: -220px;
+                }
+
+            }
+
+        }
+    
+    }
+
+    .services {
+
+        &__title {
+            font-size: 28px;
+            margin-bottom: 27px;
+        }
+
+        hr {
+            width: 179px;
+            margin: 0 0 33px 0;
+        }
+
+        .row {
+            margin-right: -6px;
+            margin-left: -6px;
+        }
+
+        div[class^="col"] {
+            padding: 0 6px;
+            margin-bottom: 18px;
+        }
+
+        &__card {
+
+            &-img {
+                max-width: 60px;
+                height: 60px;
+                margin: 0 auto 22px;
+            }
+
+            &-title--bg {
+                text-align: center;
+                padding: 11px 0;
+            }    
+
+        }
+
+    }
+
+    .footer {
+
+        &__title {
+            margin-bottom: 14px !important;
+        }
+
+        &__title.mb-2 {
+            font-size: 16px;
+        }
+
+    }
+
+}
+
+@media (max-width: 767px) and (min-width: 575px) {
+
+    .footer__copyright {
+
+        a.ml-auto  {
+            flex: 0 0 100%;
+            text-align: center;
+        }
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .news {
+        padding-bottom: 180px;
+    }
+
+    .services {
+
+        hr {
+            width: 110px;
+        }
+
+    }
+
+    .footer {
+
+        &__copyright {
+            text-align: center;
+            flex-direction: column;
+
+            p.mr-5 {
+                margin: 0 auto !important;
+            }
+
+            a.ml-4 {
+                margin: 10px auto 0 !important;
+            }
+
+            a.ml-auto {
+                margin: 10px auto 0 !important;
+            }
+
+        }
+    
+    }
+
+}
